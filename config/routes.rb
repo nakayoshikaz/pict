@@ -16,6 +16,9 @@ Rails.application.routes.draw do
   resources :users
   resources :topics
 
+  get '/favorites/index'
+  post '/favorites', to: 'favorites#create'
+
 
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
